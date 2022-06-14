@@ -11,8 +11,14 @@ class Home extends BaseController
 	{
 		// Mengambil Model Data
 		$model = new \App\Models\CalonPasienModel();
-		// Mengambil seluruh data array ataupun atribut terkait Calon Pasien
-		$data = $model->findAll();
-		return view('welcome_message');
+		// Mengambil seluruh data array ataupun atribut terkait Calon Pasien(Object)
+		$identitas = $model->findAll();
+
+		
+		$data = [
+            'title' => 'Hasil',
+            'data_pasien' => $identitas
+        ];
+		return view('identitas/hasil', $data);
 	}
 }
