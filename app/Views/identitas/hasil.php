@@ -1,12 +1,15 @@
 <?= $this->extend('layout/template') ?>
 <?= $this->section('content') ?>
 
+
+
+
 <div class="container">
-    <h2 class="text-center mt-2">Analisis</h2>
     <div class="card mt-3">
         <div class="card-body">
             <div class="container">
                 <div class="container">
+                    <h2 class="text-center mb-3">Analisis</h2>
                     <div class="row">
                         <div class="card col-sm-3">
                             <h3 class="text-center">Diagram</h3>

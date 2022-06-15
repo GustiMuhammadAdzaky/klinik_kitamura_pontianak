@@ -8,9 +8,30 @@
 
     <!-- my Css -->
     <!-- <link rel="stylesheet" href="<?= base_url('/'); ?>/css/style.css"> -->
+    <style>
+    /* mengatur warna backgroud dan padding pada tag body bagian atas agar form tidak menempel diatas */
+    body {
+        background: #4ccccd;
+    }
+
+    /* mengatur warna backgroud form */
+    form {
+        background: #fff;
+    }
+
+    /* mengatur border dan padding class form-container */
+    .form-container {
+        border-radius: 10px;
+        padding: 30px;
+    }
+    </style>
 </head>
 
 <body>
+
+
+    <?= $this->include('layout/navbar'); ?>
+
 
 
     <?= $this->renderSection('content'); ?>
